@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+
+<head>
+
+<!--Note- One plug in was used for the sliding from the first to second page, full page plugin is open source and downloaded from github. Most CSS and javascript aspects and tags from the FullPage plugin  were not used for our website still remain in the code as we didn't want to change any code to disrupt the navigation. For final project this will not be the case. Group is learning Jquery and developing javascript. 
+ -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Handmade</title>
+<meta name="description" content="fullPage plugin" />
+<meta name="Resource-type" content="Document" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+
+<link rel='shortcut icon'  href='images/favicon.ico' />
+    
+<!--Font styling links-->   
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300" rel="stylesheet">
+    
+<!--Style sheets used including plugin stylesheets-->    
+<link rel="stylesheet" type="text/css" href="plug-ins/hover.css" />
+<link rel="stylesheet" type="text/css" href="javascript.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="animate.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  
+    
+<!--Jquery library-->    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+</script>
+
+    
+<!--Various scripts used-->
+<script src="jquery.lettering.js"> </script> 
+    <script>
+      $(document).ready(function() {
+        $(".fancy_title").lettering();
+      });
+</script>
+    
+    
+    
+<script src="jquery.textillate.js"></script>
+    <script>
+      $(function () {
+      $('.tlt').textillate();
+    });
+</script>
+
+
+		<style>
+	
+		/* Such styling not by project group, simply for plug-in purposes.  Most styling has been over-ridden by our own code.
+		 * --------------------------------------- */
+		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+		form,fieldset,input,textarea,p,blockquote,th,td {
+		    padding: 0;
+		    margin: 0;
+		}
+		
+		table {
+		    border-spacing: 0;
+		}
+		fieldset,img {
+		    border: 0;
+		}
+		address,caption,cite,code,dfn,em,strong,th,var {
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		strong{
+			font-weight: bold;
+		}
+		ol,ul {
+		    list-style: none;
+		    margin:0;
+		    padding:0;
+		}
+		caption,th {
+		    text-align: left;
+
+		}
+		h2,h3,h4,h5,h6 {
+		    font-weight: normal;
+		    font-size: 100%;
+		    margin:0;
+		    padding:0;
+		    color:#444;
+		}
+		q:before,q:after {
+		    content:'';
+		}
+		abbr,acronym { border: 0;
+		}
+
+
+		/* Custom CSS
+		 * --------------------------------------- */
+		body{
+			font-family: arial,helvetica;
+			color: #F2F2F2;
+		}
+		h1{
+			font-size:10vw;
+		height: 100px;
+		top: 50%;
+		margin-top:-50px;
+		width: 1024px;
+		left: 50%;
+		margin-left: -512px;
+		}
+		p{
+			font-size: 2em;
+		}
+		.content{
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			text-align: center;
+		}
+
+	
+
+
+		/* Section 2
+		 * --------------------------------------- */
+		#section1{
+			
+			
+		}
+		#section1 h1{
+			color: #fff;
+		}
+		#section1 p{
+			opacity: 0.8;
+		}
+
+		
+	
+	</style>
+    
+</head>
+
+
+
+
+<body>
+
+    
+    <!--full screen video background placed behind and outsite of fullpage.js div so it is constantly present whilst scrolling-->
+
+    <video autoplay fixed loop muted poster="DSC_0002.jpg" id="background" preload="auto">
+    <source src="images/watervid.mp4" > 
+    </video>
+    
+    
+
+ 
+     
+     <a href="#homePage"><img src="images/arrow-01.png" id="scroll1" class="hvr-bounce-out animated infinite bounce" alt=""/></a>
+    <img src="images/logosmallgrey01.png"    id="logo4" alt="" onclick="location.href='handmade.html#homePage';"/>
+    <img src="images/handsicon-01.png" id="groupicon" class=" hvr-bounce-out " onmouseover="this.src='images/handsiconhover-01.png';" onmouseout="this.src='images/handsicon-01.png';" alt="" onclick="location.href='artists.html';"/>
+    <img src="images/counciliconwhite-01.png" onmouseover="this.src='images/counciliconwhitehover-01.png';" onmouseout="this.src='images/counciliconwhite-01.png';"  id="councilicon" class=" hvr-bounce-out " alt="" onclick="location.href='craftcouncil.html';"/>
+    
+    
+    <div id="artisans" class="tlt" data-in-effect="zoomIn">MAKERS</div>
+       
+        <div id="council" class="tlt" data-in-effect="zoomIn">COUNCIL</div>
+     
+    
+    
+    
+  <a href="#quotePage"><div id="scrolltext">SCROLL DOWN</div>       
+        <img src="images/sbutton-01.png" id="scroll3" class="hvr-bounce-out" alt=""/></a>
+    
+<div id="fullpage">
+
+<div class="section" id="section100">
+    
+    <div id="boxmotive">
+    
+    <h200 class="tlt" data-in-effect="fadeIn">Motive</h200>
+        <h201>The purpose of handmade is to showcase the craft production of three diverse crafts and illustrate their importance in a modern Ireland. </h201>
+    
+    </div>
+    
+    
+    
+    </div>
+    
+
+
+    <div class="section" id="section15">
+ <div class="slide" id="slide15"> 
+     <img src="images/backgroundpic-01.png" id="photo" />
+     <div id="donegaltitle">Donegal</div>
+    <p100>County Donegal is one of the most prevalent producers of crafts in Ireland. In recent years, the nation has seen an increase in traditional crafts. This growth has been promoted by rural areas of Donegal, such as Donegal Town, Glencolmcille and Kilcar. Donegal’s tourism industry is thriving as a result of their strong history of craft and willingness to continue it. </p100>
+
+        
+
+     </div>
+ <div id="glenbutton"></div>
+    <div id="kilcarbutton"></div>
+    <div id="dbutton"></div>
+   
+  <img src="images/map-01.png" id="layer"/>
+
+        
+        <div id="k">Kilcar</div>
+        <div id="g"> Glencolmcille</div>
+        <div id="d">Donegal Town</div>
+    </div>
+    <div class="section" id="section15">
+        <div id="meetteam">Handmade Donegal</div>
+        <div id="prodteam">Production Crew</div>
+    
+   <div id="slidedown">
+   
+     
+    
+    <h100>Deirdre McGrath</h100>
+        <h101>Hayley Marjoram</h101>
+        <h103>Cillian Connolly</h103>
+        <h104>Stephanie Brady</h104>
+        <h105>Robyn Ree</h105>
+      <img src="images/3.jpg" id="hshot1" class="hvr-float" onclick=  "JavaScript:newPopup2('https://ie.linkedin.com/in/hayley-marjoram-712a58125');"/>
+     <img src="images/cillian.png" id="hshot3" class="hvr-float" onclick=  "JavaScript:newPopup2('https://www.linkedin.com/in/cillianconnolly/');"/>
+     <img src="images/1.jpg" id="hshot2" class="hvr-float" onclick=  "JavaScript:newPopup2('https://www.linkedin.com/in/deirdremcgrath10/');"/>
+     <img src="images/steph.png" id="hshot4" class="hvr-float" onclick=  "JavaScript:newPopup2(' https://www.linkedin.com/in/stephanie-brady-138138b6/');"/>
+     <img src="images/2.jpg" id="hshot5" class="hvr-float"onclick=  "JavaScript:newPopup2(' https://www.linkedin.com/in/robyn-ree-970b59142/');"/>
+          
+   </div>
+   
+   
+   
+    </div>
+    
+    </div>
+       
+</body>
+        
+        
+
+	
+
+<script type="text/javascript" src="javascript.fullPage.js"></script>
+<script type="text/javascript">
+	fullpage.initialize('#fullpage', {
+		anchors: ['firstPage', 'quotePage', 'homePage', 'craftPage', 'artisanPage'],
+		menu: '#menu',
+        
+      
+            
+            
+            
+             easingcss3: ' cubic-bezier(0.785, 0.135, 0.15, 0.86)' ,
+        
+              afterLoad: function(anchorLink, index){
+                   if(index == 3){
+                    $('#hshot1, #hshot3, #hshot2, #hshot4, #hshot5').fadeIn(500).removeClass("hidden");
+                      $("#logo4").mouseenter(function(){
+                           $("#logo4").attr("src", "images/logosmallhomewhite-01.png");
+                  });
+                
+                $("#logo4").mouseleave(function(){
+                           $("#logo4").attr("src", "images/logosmallfinal-01.png");
+                  }); 
+                      
+                      $("#logo4").attr("src", "images/logosmallfinal-01.png");
+                      $('#glenbutton, #kilcarbutton, #dbutton').fadeIn(100).removeClass("hidden");
+                            
+                      $("#councilicon").attr("src", "images/counciliconwhite-01.png");
+                      $("#groupicon").attr("src", "images/handsicon-01.png");
+              $("#groupicon").mouseenter(function(){
+                           $("#groupicon").attr("src", "images/handsiconhover-01.png");
+                  });  
+                        
+                         $("#groupicon").mouseleave(function(){
+                           $("#groupicon").attr("src", "images/handsicon-01.png");
+                  }); 
+                      
+                        $("#councilicon").mouseenter(function(){
+                           $("#councilicon").attr("src", "images/counciliconwhitehover-01.png");
+                  });  
+                        
+                         $("#councilicon").mouseleave(function(){
+                           $("#councilicon").attr("src", "images/counciliconwhite-01.png");
+                  });  
+                 
+           
+                       $('#council').css("color", "#ffffff"); 
+                  $('#artisans').css("color", "#ffffff");
+                       
+                   
+                       
+                       
+                   $('h100, h101, h102, h103, h104, h105').addClass('animated fadeInUp');
+                   
+                   }
+                  
+                  if(index == 2){
+        
+                         
+                      
+            $("#scroll3").css("display", "block");
+                      
+                      
+                      
+           $("#logo4").mouseenter(function(){
+                           $("#logo4").attr("src", "images/logosmallhomewhite-01.png");
+                  });
+                
+                $("#logo4").mouseleave(function(){
+                           $("#logo4").attr("src", "images/logosmallfinal-01.png");
+                  }); 
+                      
+                      $("#logo4").attr("src", "images/logosmallfinal-01.png");
+                      $('#glenbutton, #kilcarbutton, #dbutton').fadeIn(100).removeClass("hidden");
+                            
+                      $("#councilicon").attr("src", "images/counciliconwhite-01.png");
+                      $("#groupicon").attr("src", "images/handsicon-01.png");
+              $("#groupicon").mouseenter(function(){
+                           $("#groupicon").attr("src", "images/handsiconhover-01.png");
+                  });  
+                        
+                         $("#groupicon").mouseleave(function(){
+                           $("#groupicon").attr("src", "images/handsicon-01.png");
+                  }); 
+                      
+                        $("#councilicon").mouseenter(function(){
+                           $("#councilicon").attr("src", "images/counciliconwhitehover-01.png");
+                  });  
+                        
+                         $("#councilicon").mouseleave(function(){
+                           $("#councilicon").attr("src", "images/counciliconwhite-01.png");
+                  });  
+                 
+           
+                       $('#council').css("color", "#ffffff"); 
+                  $('#artisans').css("color", "#ffffff");
+               
+                     
+                       $(".fp-controlArrow.fp-prev, .fp-controlArrow.fp-next").css("display", "none");
+                        $('#layer, #glenbutton, #kilcarbutton, #dbutton').addClass('animated slideInRight');
+                      $('#glentext2, #donegaltitle').addClass('animated slideInLeft');
+             $("#layer").fadeIn(200).removeClass("hidden");
+          
+          $("#glen2, #kilcar2, #donegaltown2").click(function(){
+                           $("#glen2, #kilcar2, #donegaltown2").css("display", "none");
+                            
+                  });  
+                  
+                             $("#glenbutton").mouseenter(function(){
+                           $("#g").fadeIn(500).removeClass('hidden');
+                  });
+                
+                $("#glenbutton").mouseleave(function(){
+                           $("#g").fadeOut(200).addClass('hidden');
+                  }); 
+                      
+                      $("#kilcarbutton").mouseenter(function(){
+                           $("#k").fadeIn(500).removeClass('hidden');
+                  });
+                
+                $("#kilcarbutton").mouseleave(function(){
+                           $("#k").fadeOut(500).addClass('hidden');
+                  }); 
+                      
+                      
+                        $("#dbutton").mouseenter(function(){
+                           $("#d").fadeIn(500).removeClass('hidden');
+                  });
+                
+                $("#dbutton").mouseleave(function(){
+                           $("#d").fadeOut(500).addClass('hidden');
+                  });     
+    
+ 
+                      
+                      
+            }
+     
+      if(index == 1){
+       
+           
+          $("#councilicon").attr("src", "images/councilicongrey-01.png");
+          $("#groupicon").attr("src", "images/makersicon-01.png");
+              $("#groupicon").mouseenter(function(){
+                           $("#groupicon").attr("src", "images/makersiconhover-01.png");
+                  });  
+                        
+                         $("#groupicon").mouseleave(function(){
+                           $("#groupicon").attr("src", "images/makersicon-01.png");
+                  }); 
+          
+                $("#councilicon").mouseenter(function(){
+                           $("#councilicon").attr("src", "images/councilicongreyhover-01.png");
+                  });  
+                        
+                         $("#councilicon").mouseleave(function(){
+                           $("#councilicon").attr("src", "images/councilicongrey-01.png");
+                  });  
+          
+            $("#scroll3").css("display", "block");
+          
+           $('#logo4').attr("src", "images/logosmallgrey-01.png");
+           $('h201').addClass('animated fadeInUp');
+          $('#glenbutton, #kilcarbutton, #dbutton').fadeOut(100).addClass("hidden");
+                $("#logo4").attr("src", "images/logosmallgrey-01.png");
+                         
+              $("#logo4").mouseenter(function(){
+                           $("#logo4").attr("src", "images/logosmallhome-01.png");
+                  });
+                
+                $("#logo4").mouseleave(function(){
+                           $("#logo4").attr("src", "images/logosmallgrey-01.png");
+                  }); 
+                
+            $("#artisans").css("color", "#5b5b5b");
+           $("#council").css("color", "#5b5b5b");
+           $("#layer").css("display", "none");
+          $(".fp-controlArrow.fp-prev, .fp-controlArrow.fp-next").css("display", "none");
+           
+           $("#hshot2").mouseenter(function(){
+                           $("h100").fadeIn(200).removeClass("hidden");
+                            $("#hshot4, #hshot1, #hshot3, #hshot5 ").css("opacity", "0.4");
+                  });  
+                         $("#hshot2").mouseleave(function(){
+                          $("h100").fadeOut(200).removeClass("hidden");
+                             $("#hshot4, #hshot1, #hshot3, #hshot5 ").css("opacity", "1");
+                  });  
+          
+             $("#hshot3").mouseenter(function(){
+                           $("h103").fadeIn(200).removeClass("hidden");
+                            $("#hshot4, #hshot1, #hshot2, #hshot5 ").css("opacity", "0.4");
+                  });  
+                         $("#hshot3").mouseleave(function(){
+                          $("h103").fadeOut(200).removeClass("hidden");
+                             $("#hshot4, #hshot1, #hshot2, #hshot5 ").css("opacity", "1");
+                  });  
+          
+          $("#hshot1").mouseenter(function(){
+                           $("h101").fadeIn(200).removeClass("hidden");
+                            $("#hshot4, #hshot3, #hshot2, #hshot5 ").css("opacity", "0.4");
+                  });  
+                         $("#hshot1").mouseleave(function(){
+                          $("h101").fadeOut(200).removeClass("hidden");
+                             $("#hshot4, #hshot3, #hshot2, #hshot5 ").css("opacity", "1");
+                  });  
+      
+             $("#hshot4").mouseenter(function(){
+                           $("h104").fadeIn(200).removeClass("hidden");
+                            $("#hshot1, #hshot3, #hshot2, #hshot5 ").css("opacity", "0.4");
+                  });  
+                         $("#hshot4").mouseleave(function(){
+                          $("h104").fadeOut(200).removeClass("hidden");
+                             $("#hshot1, #hshot3, #hshot2, #hshot5 ").css("opacity", "1");
+                  });  
+      
+             $("#hshot5").mouseenter(function(){
+                           $("h105").fadeIn(200).removeClass("hidden");
+                            $("#hshot1, #hshot3, #hshot2, #hshot4 ").css("opacity", "0.4");
+                  });  
+                         $("#hshot5").mouseleave(function(){
+                          $("h105").fadeOut(200).removeClass("hidden");
+                             $("#hshot1, #hshot3, #hshot2, #hshot4 ").css("opacity", "1");
+                  });  
+          
+            }
+              },
+
+        
+              onLeave: function(index, nextIndex, direction){
+             
+              if(index == 1 && direction == "down"  ){
+                  
+                    
+                  $("h200").animate({"top":"-35vw"}, 800);
+                   $("h201").animate({"top":"100vw"}, 800);
+                  
+                   $('#photo').addClass('animated slideInUp');
+             
+           
+                      
+                    $('#layer').addClass('animated slideInRight');
+              
+              }
+                  
+                  
+              },
+                  
+        
+        
+         onLeave: function(index, nextIndex, direction){
+             
+              if(index == 1 && direction == "down"  ){
+                 $("h200").animate({"left":"-15vw"}, 1000);
+                   $("h201").animate({"left":"100vw"}, 1000);
+                  
+                  
+                           $('#scrolltext').css("display", "none");
+                   $('#donegaltitle, p100').addClass('animated slideInLeft');
+                  
+                
+                
+              }
+              if(index == 2 && direction == "up"  ){
+                  
+                  $("h200").animate({"left":"50%"}, 1100);
+                   $("h201").animate({"left":"50%"}, 1100);
+                 $('#scrolltext').css("display", "block");
+               $('#logo4').attr("src", "images/logosmallfinal-01.png");
+             $('#glenbutton, #kilcarbutton, #dbutton').fadeOut(100).addClass("hidden");
+                       $('#glenbutton, #kilcarbutton, #dbutton').fadeOut(100).addClass("hidden");
+                       
+         
+                 
+              
+              }
+             
+                 if(index == 3 && direction == "up"  ){
+                $('#hshot1, #hshot2, #hshot3, #hshot4, #hshot5').fadeOut(300).addClass("hidden");
+                       
+         
+                 
+              
+              }
+               if(index == 2 && direction == "down"  ){
+                   
+                  $('#meetteam, #prodteam').fadeIn(300).removeClass("hidden");
+                     $('#meetteam, #prodteam').addClass('animated slideInDown');
+                 $('#scrolltext').css("display", "none");
+               $('#logo4').attr("src", "images/logosmallfinal-01.png");
+             $('#glenbutton, #kilcarbutton, #dbutton').fadeOut(100).addClass("hidden");
+                       $('#glenbutton, #kilcarbutton, #dbutton').fadeOut(100).addClass("hidden");
+                   $('#meetteam, #prodteam').addClass('animated slideInUp');
+                   
+                    $('#scroll3').fadeOut(500).addClass("hidden");
+                   
+                
+                  
+                       
+         
+                 
+              
+              }
+         },
+        
+        
+        
+		css3:true
+	});
+    
+      
+    function detectmob() {
+   if(window.innerWidth <= 800 || window.innerHeight <= 600) {
+     return true;
+   } else {
+     return false;
+   }
+}
+
+if (detectmob()){
+top.location.href="handmade.html";
+}
+	
+
+	var audio = document.getElementById('background_audio');
+
+document.getElementById('').addEventListener('click', function (e)
+{
+    e = e || window.event;
+    audio.muted = !audio.muted;
+    e.preventDefault();
+}, false);
+    
+ 
+    
+  		                    function expandThis() {
+     document.getElementById('photobox').innerHTML = '<img src="images/wall-01.png" id="photo8-x" /> ';
+}
+    
+        function shrinkThis() {
+     document.getElementById('photobox').innerHTML = ' ';
+}
+     
+      		                    function expandThis() {
+     document.getElementById('photobox').innerHTML = '<img src="images/wall-01.png" id="photo8-x" /> ';
+}
+    
+        function shrinkThis() {
+     document.getElementById('photobox').innerHTML = ' ';
+}
+    
+              
+                                     
+    
+</script>
+  
+	
+
+
+</body>
+
+</html>
+  
+	
+    

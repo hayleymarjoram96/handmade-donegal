@@ -1,0 +1,54 @@
+/**
+ * fullPage Pure Javascript v.0.0.4 (Alpha) - Not support given until Beta version.
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+ @charset "UTF-8";
+
+#background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height:auto;
+    z-index: -500;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: auto;
+	opacity: 0.98;
+	overflow:hidden;
+}
+
+
+#oldbrowser {
+    color: #666;
+    font-family: 'Great Vibes', cursive;
+    width: 50vw;
+    left: 50%;
+    margin-left: -25vw;
+    top: 0;
+    
+}
+
+
+#ieicon {
+    display: block;
+    position: absolute;
+    left: 37%;
+    width: 100px;
+    top: 450px;
+}
+
+
+#chromeicon {
+    display: block;
+    position: absolute;
+    left: 53%;
+    width: 80px;
+    top: 460px;
+}

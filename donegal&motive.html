@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<head>
+
+<!--Note- One plug in was used for the sliding from the first to second page, full page plugin is open source and downloaded from github. Most CSS and javascript aspects and tags from the FullPage plugin  were not used for our website still remain in the code as we didn't want to change any code to disrupt the navigation. For final project this will not be the case. Group is learning Jquery and developing javascript. 
+ -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HANDMADE</title>
+<meta name="description" content="fullPage plugin" />
+<meta name="Resource-type" content="Document" />
+    
+    
+    
+<!--Font styling links-->   
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">
+    
+<!--Style sheets used including plugin stylesheets-->    
+<link rel="stylesheet" type="text/css" href="plug-ins/hover.css" />
+<link rel="stylesheet" type="text/css" href="javascript.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="animate.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  
+    
+<!--Jquery library-->    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+</script>
+
+    
+<!--Various scripts used-->
+<script src="jquery.lettering.js"> </script> 
+    <script>
+      $(document).ready(function() {
+        $(".fancy_title").lettering();
+      });
+</script>
+    
+    
+    
+<script src="jquery.textillate.js"></script>
+    <script>
+      $(function () {
+      $('.tlt').textillate();
+    });
+</script>
+
+
+		<style>
+	
+		/* Such styling not by project group, simply for plug-in purposes.  Most styling has been over-ridden by our own code.
+		 * --------------------------------------- */
+		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+		form,fieldset,input,textarea,p,blockquote,th,td {
+		    padding: 0;
+		    margin: 0;
+		}
+		
+		table {
+		    border-spacing: 0;
+		}
+		fieldset,img {
+		    border: 0;
+		}
+		address,caption,cite,code,dfn,em,strong,th,var {
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		strong{
+			font-weight: bold;
+		}
+		ol,ul {
+		    list-style: none;
+		    margin:0;
+		    padding:0;
+		}
+		caption,th {
+		    text-align: left;
+
+		}
+		h2,h3,h4,h5,h6 {
+		    font-weight: normal;
+		    font-size: 100%;
+		    margin:0;
+		    padding:0;
+		    color:#444;
+		}
+		q:before,q:after {
+		    content:'';
+		}
+		abbr,acronym { border: 0;
+		}
+
+
+		/* Custom CSS
+		 * --------------------------------------- */
+		body{
+			font-family: arial,helvetica;
+			color: #F2F2F2;
+		}
+		h1{
+			font-size:10vw;
+		height: 100px;
+		top: 50%;
+		margin-top:-50px;
+		width: 1024px;
+		left: 50%;
+		margin-left: -512px;
+		}
+		p{
+			font-size: 2em;
+		}
+		.content{
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			text-align: center;
+		}
+
+	
+
+
+		/* Section 2
+		 * --------------------------------------- */
+		#section1{
+			
+			
+		}
+		#section1 h1{
+			color: #fff;
+		}
+		#section1 p{
+			opacity: 0.8;
+		}
+
+		
+	
+	</style>
+    
+</head>
+
+
+
+
+<body>
+
+    
+    <!--full screen video background placed behind and outsite of fullpage.js div so it is constantly present whilst scrolling-->
+
+    <video autoplay fixed loop muted poster="DSC_0002.jpg" id="background">
+    <source src="images/watervid.mp4" > 
+    </video>
+    
+    
+    <a href="#homePage"><img src="images/logo8-01.png"  class=" hvr-bob"  id="logo2" alt="" onmouseover="this.src='images/iconhome2-01.png';" onmouseout="this.src='images/logo8-01.png';"/></a>
+ 
+<div id="scrolltext" class="blink2 animated infinite bounce">SCROLL</div>       
+     <a href="#homePage"><img src="images/arrow-01.png" id="scroll1" class="hvr-bounce-out animated infinite bounce" alt=""/></a>
+    
+    <a href="#artisanPage"><img src="images/icongroup-01.png" id="groupicon" class=" hvr-bounce-out " alt=""/></a>
+    <img src="images/iconmotive-01.png" id="motiveicon" class=" hvr-bounce-out " alt=""/>
+    <a href="#craftPage"><img src="images/iconcouncil-01.png" id="councilicon" class=" hvr-bounce-out " alt=""/></a>
+    
+    <div id="artisans" class="tlt" data-in-effect="zoomIn">ARTISANS</div>
+        <div id="motive" class="tlt" data-in-effect="zoomIn">MOTIVE</div>
+        <div id="council" class="tlt" data-in-effect="zoomIn">PLACE</div>
+    
+    
+    <img src="images/donegalbackground-01.png" id="donegalbackground" alt=""/>
+    
+<div id="fullpage">
+
+<div class="section" id="section1">
+
+<div class="slide" id="slide12">
+
+    
+    
+    
+    
+    
+    </div></div>
+    
+
+
+    <div class="section" id="section1">
+
+<div class="slide" id="slide1">
+
+    </div></div>
+    
+    
+
+    
+   
+
+
+    </div>
+       
+</body>
+        
+        
+
+	
+
+<script type="text/javascript" src="javascript.fullPage.js"></script>
+<script type="text/javascript">
+	fullpage.initialize('#fullpage', {
+		anchors: ['firstPage', 'quotePage', 'homePage', 'craftPage', 'artisanPage'],
+		menu: '#menu',
+        
+      
+            
+            
+            
+              easingcss3: ' cubic-bezier(0.785, 0.135, 0.15, 0.86)' ,
+        
+
+        
+        
+		css3:true
+	});
+	
+
+	var audio = document.getElementById('background_audio');
+
+document.getElementById('').addEventListener('click', function (e)
+{
+    e = e || window.event;
+    audio.muted = !audio.muted;
+    e.preventDefault();
+}, false);
+    
+    
+    
+    
+    
+ 
+</script>
+  
+	
+
+
+</body>
+
+</html>
+  
+	
+    
