@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+
+<head>
+
+<!--Note- One plug in was used for the sliding from the first to second page, full page plugin is open source and downloaded from github. Most CSS and javascript aspects and tags from the FullPage plugin  were not used for our website still remain in the code as we didn't want to change any code to disrupt the navigation. For final project this will not be the case. Group is learning Jquery and developing javascript. 
+ -->
+    
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Handmade</title>
+<meta name="description" content="fullPage plugin" />
+<meta name="Resource-type" content="Document" />
+    
+    
+<!--Font styling links-->   
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">
+    
+<!--Style sheets used including plugin stylesheets-->    
+<link rel="stylesheet" type="text/css" href="plug-ins/hover.css" />
+
+<link rel="stylesheet" type="text/css" href="index.css" />
+<link rel="stylesheet" type="text/css" href="animate.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  
+    
+<!--Jquery library-->    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+</script>
+
+    
+<!--Various scripts used-->
+<script src="jquery.lettering.js"> </script> 
+    <script>
+      $(document).ready(function() {
+        $(".fancy_title").lettering();
+      });
+</script>
+    
+    
+    
+<script src="jquery.textillate.js"></script>
+    <script>
+      $(function () {
+      $('.tlt').textillate();
+    });
+</script>
+
+
+		<style>
+	
+		/* Such styling not by project group, simply for plug-in purposes.  Most styling has been over-ridden by our own code.
+		 * --------------------------------------- */
+		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+		form,fieldset,input,textarea,p,blockquote,th,td {
+		    padding: 0;
+		    margin: 0;
+		}
+		
+		table {
+		    border-spacing: 0;
+		}
+		fieldset,img {
+		    border: 0;
+		}
+		address,caption,cite,code,dfn,em,strong,th,var {
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		strong{
+			font-weight: bold;
+		}
+		ol,ul {
+		    list-style: none;
+		    margin:0;
+		    padding:0;
+		}
+		caption,th {
+		    text-align: left;
+
+		}
+		h2,h3,h4,h5,h6 {
+		    font-weight: normal;
+		    font-size: 100%;
+		    margin:0;
+		    padding:0;
+		    color:#444;
+		}
+		q:before,q:after {
+		    content:'';
+		}
+		abbr,acronym { border: 0;
+		}
+
+
+		/* Custom CSS
+		 * --------------------------------------- */
+		body{
+			font-family: arial,helvetica;
+			color: #F2F2F2;
+		}
+		h1{
+			font-size:10vw;
+		height: 100px;
+		top: 50%;
+		margin-top:-50px;
+		width: 1024px;
+		left: 50%;
+		margin-left: -512px;
+		}
+		p{
+			font-size: 2em;
+		}
+		.content{
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			text-align: center;
+		}
+
+	
+
+
+		/* Section 2
+		 * --------------------------------------- */
+		#section1{
+			
+			
+		}
+		#section1 h1{
+			color: #fff;
+		}
+		#section1 p{
+			opacity: 0.8;
+		}
+
+		
+	
+	</style>
+    
+
+    
+</head>
+
+
+
+
+<body>
+
+    
+    <!--full screen video background placed behind and outsite of fullpage.js div so it is constantly present whilst scrolling-->
+
+    <video autoplay loop muted   preload="auto" id="background">
+    <source src="images/water720.mp4" type="video/mp4"> 
+    <source src="images/watervid.webm" type="video/webm"> 
+        
+
+    </video>
+   <audio autoplay loop id="waves">
+  <source src="audio/waves.mp3" type="audio/mp3">
+  
+Your browser does not support the audio element.
+</audio>
+        
+    <a href="#homePage"><img src="images/logo8-01.png"  class=" hvr-bob"  id="logo2" alt="" /></a>
+ 
+<div id="scrolltext" class="blink2" >scroll to continue</div>       
+    <img src="images/arrow1-01.png" id="scroll1" alt=""/>
+    
+    <a href="artists.html"><img src="images/icongroup-01.png" id="groupicon" class=" hvr-bounce-out " alt=""/></a>
+    <img src="images/iconmotive-01.png" id="motiveicon" class=" hvr-bounce-out " alt=""/>
+    <a href="craftcouncil.html"><img src="images/iconcouncil-01.png" id="councilicon" class=" hvr-bounce-out " alt=""/></a>
+    
+    <div id="artisans" class="tlt" data-in-effect="zoomIn">ARTISANS</div>
+        
+    
+    
+    
+       <div class="unmute"></div>
+    
+    
+<div id="fullpage">
+    
+        
+    
+    
+
+<div class="section" id="section1">
+
+<div class="slide" id="slide1">
+
+    
+     
+
+     
+      <div id="mainmenu">
+          <a href="artists.html"><img src="images/makers-01.png" id="home"  class="hvr-bounce-out" onmouseover="this.src='images/makershover-01.png';" onmouseout="this.src='images/makers-01.png';"/>
+          <br><br><br><br><br><br>
+          <a href="craftcouncil.html"><img src="images/councilbutton1.png"id="home3" onmouseover="this.src='images/councilbuttonhover.png';" onmouseout="this.src='images/councilbutton1.png';" class="hvr-bounce-out"/></a>
+          <a href="motive&donegal.html"> <img src="images/motivebutton.png" id="home2" onmouseover="this.src='images/motivebuttonhover2.png';" onmouseout="this.src='images/motivebutton.png';" class="hvr-bounce-out"/></a>
+          
+   
+    </div>
+    <h11>Why Donegal <br> & why craft?</h11>
+        <h12>Craft Council of Ireland <br>
+        & Craft in Donegal.</h12>
+       <h13 class="tlt" data-in-effect="fadeInDown">Watch and learn about our 3 crafspeople <br>based in Donegal.</h13>
+        <h14>Craft filming locations<br>in Donegal.</h14>
+     
+     
+    
+
+    
+
+   
+    
+ 
+    <a href="#quotePage"><img src="images/playintroduction-01.png" id="playintroduction" alt="" /></a>
+
+<div class="content">
+            
+      
+       
+    <img src="images/logopng1.png" id="logo" alt=""/>
+        
+      
+           
+			
+
+		    
+ </div>
+</div>
+    </div>
+    
+<div class="section" id="section2">
+    
+     <a href="#firstPage"> <img src="images/skipintroduction-01.png" id="skipme" /></a>
+     <a href="#"><img src="images/playvid-01.png" id="showreel" onmouseover="this.src='images/playvidhover-01.png';" onmouseout="this.src='images/playvid-01.png';"/></a>
+    <video muted id="introductionvid">
+    <source src="images/mcgoniglevid.mp4" > 
+    </video>
+   
+        
+
+     
+	<div class="content">
+    
+       
+    
+      
+    
+    
+        <div id="quote" class="hvr-float" ><h15>Handmade is a</h15> web-mediated <h16>documentary series centered around three artisans and their craftwork in Donegal</h16></div>
+        
+         <img src="images/quotebox-01.png" id="quotebox" alt="" />
+        
+       </div>
+	   
+	   
+	   
+
+
+    
+  
+ 
+
+</div>
+    
+
+
+    
+   
+    
+ 
+    
+    
+
+    
+   
+
+
+    </div>
+       
+</body>
+        
+        
+
+	
+
+<script type="text/javascript" src="javascript.fullPage.js"></script>
+    
+<script type="text/javascript">
+	fullpage.initialize('#fullpage', {
+		anchors: ['firstPage', 'quotePage', 'homePage', 'craftPage', 'artisanPage'],
+		menu: '#menu',
+        
+        
+              afterLoad: function(anchorLink, index){
+     
+    
+        
+     if(index == 1){
+            
+         $('.unmute').css("display", "none");
+           $('#logo2').fadeIn(100).removeClass('hidden');
+          $("#logo2").attr("src", "images/logosmallfinal-01.png");
+          $('.fp-controlArrow.fp-prev ').fadeOut(10).addClass('hidden');
+         $('#logo2').fadeIn(100).removeClass('hidden');
+           $('#mainmenu').fadeIn(100).removeClass('hidden');
+          $('#scroll1, #scrolltext').fadeOut(100).addClass('hidden'); 
+            $('#introductionvid').css("display", "none"); 
+            $('#logo').css("display", "none");
+
+                $('#councilicon, #motiveicon, #groupicon').css("display", "none");
+        $('#councilicon, #motiveicon, #groupicon').addClass('animated slideInDown');
+          
+          $("#homeicon").delay(2500).animate({left:'6vw'},{duration:800});
+         $("#homeicon").animate({opacity:'0'},{duration:900});
+          $('#introvideo, #unmute').css("display", "none");
+         var video = $("#introductionvid").get(0);
+    video.pause();
+   video.currentTime = 0;
+         
+         var video = $("#background").get(0);
+    video.play();
+   video.currentTime = 0;
+         
+           
+         
+         
+         
+         
+          
+             
+         
+          
+    }
+                  
+                        
+            if(index == 5){
+            
+           $('#artists').fadeIn(20).removeClass('hidden');
+                $('#councilicon, #motiveicon, #groupicon').css("display", "block");
+                  $('#scrolltext').fadeOut(500).addClass('hidden');
+                $('h10').fadeIn(500).removeClass('hidden');
+                $("#logo2").attr("src", "images/logo8-01.png");
+                $("#logo2").css("display", "block");
+               $("#councilicon").attr("src", "images/iconcouncil1-01.png");
+                $("#motiveicon").attr("src", "images/iconmotive2-01.png");
+                $("#groupicon").attr("src", "images/icongroup-01.png");
+                $('#headshot1').fadeIn(1500).removeClass('hidden');
+                 $('#headshot2').fadeIn(2200).removeClass('hidden');
+                 $('#headshot3').fadeIn(00).removeClass('hidden');
+                
+                
+                
+                
+                
+                
+         
+         
+          
+            } 
+                  
+                     if(index == 4){
+            
+           
+                $('#councilicon, #motiveicon, #groupicon, #logo2').css("display", "block");
+                          $('#scrolltext').css("display", "none");
+                         $("#groupicon").attr("src", "images/icongroup2-01.png");
+                $("#motiveicon").attr("src", "images/iconmotive2-01.png");
+                         $("#councilicon").attr("src", "images/iconcouncil-01.png");
+                         $("#logo2").attr("src", "images/logo8-01.png");
+                         $('#emer1, #emer2, #emer3, #emerpic').css("display", "block");
+                         
+                         
+                
+         
+         
+          
+            }  
+                  
+                  
+        if(index == 2){
+            
+            
+ 
+     
+    
+     $("#introductionvid").prop('muted', false);
+
+           
+            $('#logo').fadeOut(2000).addClass("hidden");
+            $('#mapicon, #motiveicon, #groupicon').css("display", "block");
+         $('#councilicon, #motiveicon, #groupicon').css("display", "none");
+          $('#logo2').css("display", "block");
+            $('.unmute').css("display", "block");
+            $('#quotebox').addClass('animated slideInDown');
+             $("#logo2").attr("src", "images/logosmallfinal-01.png");
+              $("#scrolltext").css("color", "#5b5b5b");
+             $('#playintro').fadeIn(2000).removeClass("hidden");
+             $('#unmute').css("display", "block");
+           
+            
+            
+            
+            $("#scroll1").wrap($('<a>',{
+   href: 'handmade.html#homePage'
+}));
+            
+           $(document).ready(function(){  
+$("#playintro, #showreel").click(function() {
+   $("#introductionvid, #skipme, .unmute").fadeIn(200).removeClass("hidden");
+    
+ var video = $("#introductionvid").get(0);
+    video.play();
+   video.currentTime = 0;
+     
+    
+     });
+      });
+
+            
+                $(document).ready(function(){  
+$("#skipme").click(function() {
+   $("#scroll1, #scrolltext").fadeIn(200).removeClass("hidden");
+    var video = $("#introductionvid").get(0);
+    video.pause();
+   video.currentTime = 0;
+    
+
+    
+     });
+      });
+            
+                           $(document).ready(function(){  
+$("#playintro, #showreel").click(function() {
+   $("#scroll1, #scrolltext").fadeOut(200).removeClass("hidden");
+    
+
+    
+     });
+      });
+
+
+      
+        
+        var video = $("#background").get(0);
+    video.pause();
+   video.currentTime = 0;
+         
+           
+         
+            
+            
+               
+          
+
+            
+         }  
+                  
+                  
+              
+        
+                    
+              },
+    
+       onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
+           
+           if(index == 4 && direction == "right"  ){
+               $('.fp-controlArrow.fp-prev ').fadeIn(50).removeClass('hidden'); 
+               $('.fp-controlArrow.fp-next').fadeOut(50).addClass('hidden'); 
+                $('#scroll1, #scrolltext').fadeIn(500).addClass('hidden'); 
+               
+              
+            
+                
+        }
+          
+
+          
+        
+           
+           
+           
+            if(index == 4 && direction == "left"){
+                $('.fp-controlArrow.fp-prev ').fadeOut(50).addClass('hidden'); 
+           $('.fp-controlArrow.fp-next ').fadeIn(50).addClass('hidden'); }
+           
+            
+                $('.fp-controlArrow.fp-prev ').fadeOut(50).addClass('hidden'); 
+           
+           
+            
+        
+            },
+            
+            
+            
+              easingcss3: ' cubic-bezier(0.785, 0.135, 0.15, 0.86)' ,
+        
+        
+              onLeave: function(index, nextIndex, direction){
+             
+              if(index == 1 && direction == "down"  ){
+                
+                 $('#introductionvid').fadeIn(2000).removeClass('hidden'); 
+                    $("#scroll1 ").fadeOut(100).addClass("hidden");
+                  $('#logo').fadeOut(2000).addClass("hidden");
+                  
+                  var video = $("#introductionvid").get(0);
+    video.play();
+   video.currentTime = 0;
+                 
+              
+              }
+                  
+                   if(index == 2 && direction == "down"  ){
+                
+                 $('#introductionvid').fadeOut(400).addClass('hidden'); 
+                         var video = $("#background").get(0);
+    video.play();
+   video.currentTime = 0;
+         
+                      
+              
+              }
+                        
+             
+                       if(index == 2 && direction == "up"  ){
+                
+                 $('#introductionvid').fadeOut(400).addClass('hidden');
+                           $('.unmute').fadeOut(100).addClass('hidden');
+                           
+                
+                                         var video = $("#background").get(0);
+    video.play();
+   video.currentTime = 0;
+                        
+                $('#scroll1, #scrolltext').fadeIn(400).removeClass('hidden'); 
+                            var video = $("#introductionvid").get(0);
+    video.pause();
+   video.currentTime = 0;
+                           
+              
+              }
+                        
+             
+             
+             
+                     if(index == 3 && direction == "up"  ){
+                
+             $('#skipme').fadeOut(50).addClass('hidden');
+                $('#scroll1, #scrolltext').fadeIn(400).removeClass('hidden');
+                                           var video = $("#introductionvid").get(0);
+    video.pause();
+   video.currentTime = 0;
+                           
+              
+                           
+              
+              }
+                 
+             
+             
+             
+             
+        
+    },
+        
+
+        
+        
+		css3:true
+	});
+	
+
+	var audio = document.getElementById('background_audio');
+
+document.getElementById('').addEventListener('click', function (e)
+{
+    e = e || window.event;
+    audio.muted = !audio.muted;
+    e.preventDefault();
+}, false);
+    
+    
+    
+       
+          
+  
+
+    
+    
+ 
+</script>
+  
+	
+
+
+  
+	
+    

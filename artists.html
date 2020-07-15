@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<head>
+
+<!--Note- One plug in was used for the sliding from the first to second page, full page plugin is open source and downloaded from github. Most CSS and javascript aspects and tags from the FullPage plugin  were not used for our website still remain in the code as we didn't want to change any code to disrupt the navigation. For final project this will not be the case. Group is learning Jquery and developing javascript. 
+ -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Handmade</title>
+<meta name="description" content="fullPage plugin" />
+<meta name="Resource-type" content="Document" />
+    
+    
+    
+<!--Font styling links-->   
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">
+    
+<!--Style sheets used including plugin stylesheets-->    
+<link rel="stylesheet" type="text/css" href="plug-ins/hover.css" />
+<link rel="stylesheet" type="text/css" href="javascript.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="animate.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  
+    
+<!--Jquery library-->    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+</script>
+
+    
+<!--Various scripts used-->
+<script src="jquery.lettering.js"> </script> 
+    <script>
+      $(document).ready(function() {
+        $(".fancy_title").lettering();
+      });
+</script>
+    
+    
+    
+<script src="jquery.textillate.js"></script>
+    <script>
+      $(function () {
+      $('.tlt').textillate();
+    });
+</script>
+
+
+		<style>
+	
+		/* Such styling not by project group, simply for plug-in purposes.  Most styling has been over-ridden by our own code.
+		 * --------------------------------------- */
+		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+		form,fieldset,input,textarea,p,blockquote,th,td {
+		    padding: 0;
+		    margin: 0;
+		}
+		
+		table {
+		    border-spacing: 0;
+		}
+		fieldset,img {
+		    border: 0;
+		}
+		address,caption,cite,code,dfn,em,strong,th,var {
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		strong{
+			font-weight: bold;
+		}
+		ol,ul {
+		    list-style: none;
+		    margin:0;
+		    padding:0;
+		}
+		caption,th {
+		    text-align: left;
+
+		}
+		h2,h3,h4,h5,h6 {
+		    font-weight: normal;
+		    font-size: 100%;
+		    margin:0;
+		    padding:0;
+		    color:#444;
+		}
+		q:before,q:after {
+		    content:'';
+		}
+		abbr,acronym { border: 0;
+		}
+
+
+		/* Custom CSS
+		 * --------------------------------------- */
+		body{
+			font-family: arial,helvetica;
+			color: #F2F2F2;
+		}
+		h1{
+			font-size:10vw;
+		height: 100px;
+		top: 50%;
+		margin-top:-50px;
+		width: 1024px;
+		left: 50%;
+		margin-left: -512px;
+		}
+		p{
+			font-size: 2em;
+		}
+		.content{
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			text-align: center;
+		}
+
+	
+
+
+		/* Section 2
+		 * --------------------------------------- */
+		#section1{
+			
+			
+		}
+		#section1 h1{
+			color: #fff;
+		}
+		#section1 p{
+			opacity: 0.8;
+		}
+
+		
+	
+	</style>
+    
+</head>
+
+
+ <div id="motivepage2" class="tlt" data-in-effect="zoomIn">MOTIVE</div>
+       
+        <div id="council2" class="tlt" data-in-effect="zoomIn">COUNCIL</div>
+
+  <img src="images/councilicongrey-01.png" onmouseover="this.src='images/councilicongreyhover-01.png';" onmouseout="this.src='images/councilicongrey-01.png';"  id="councilicon2" class=" hvr-bounce-out " alt="" onclick="location.href='craftcouncil.html';"/>
+ <img src="images/greymotiveicon-01.png" onmouseover="this.src='images/greymotiveiconhover-01.png';" onmouseout="this.src='images/greymotiveicon-01.png';"  id="motiveicon2" class=" hvr-bounce-out " alt="" onclick="location.href='motive&donegal.html';"/>
+
+<body>
+
+    
+    <!--full screen video background placed behind and outsite of fullpage.js div so it is constantly present whilst scrolling-->
+
+    <video fixed loop muted autoplay id="background" preload="auto">
+    <source src="images/watervid.mp4" > 
+    </video>
+       <audio autoplay loop id="waves">
+  <source src="audio/waves.mp3" type="audio/mp3">
+  
+Your browser does not support the audio element.
+</audio>
+    
+  
+    
+    <a href="handmade.html#homePage"><img src="images/logosmallgrey-01.png"  id="logo2" alt="" onmouseover="this.src='images/logosmallhome-01.png';" onmouseout="this.src='images/logosmallgrey-01.png';"/></a>
+ 
+    
+
+
+    
+    
+  
+<img src="images/audio-mute-01.png" id="mute-video" onmouseover="this.src='images/audio-mutehover-01.png';" onmouseout="this.src='images/audio-mute-01.png';"/>
+    
+   
+    
+    
+    
+    
+<div id="fullpage">
+    
+   
+
+
+
+    
+   
+    
+    <div class="section" id="section5"> 
+        
+      
+<!--headshots slide in on load from different directions, see jquery below "index == 1" --> 
+    <a href="handweaving.html">  <img src="images/hshottristan2.png"id="headshot1"/></a>
+    <a href="glassfusing.html"><img src="images/hshotelaine1.png"id="headshot2" /></a>
+    <a href="stonemasonry.html"> <img src="images/hshotpaul3.png"id="headshot3"/></a>
+     
+        
+    <!-- these craft titles appear once the headshots are mooused over-->
+    <div id="tcraft">Handweaving</div>
+     <div id="ecraft">Glass Design</div>
+     <div id="pcraft">Stonemasonry</div>
+        
+        <p102>Tristan Donaghy</p102>
+        <p103>Elaine McGonigle</p103>
+        <p104>Paul Cunningham</p104>
+        
+    </div>
+    
+    
+
+    
+   
+
+
+    </div>
+
+        
+       
+</body>
+        
+        
+
+	
+
+<script type="text/javascript" src="javascript.fullPage.js"></script>
+<script type="text/javascript">
+    
+    
+	fullpage.initialize('#fullpage', {
+		anchors: ['firstPage', 'quotePage', 'homePage', 'craftPage', 'artisanPage'],
+		menu: '#menu',
+        
+        
+        
+        
+              afterLoad: function(anchorLink, index){
+     
+      if(index == 1){
+          
+          
+          
+    
+          
+             // http://stackoverflow.com/questions/21852284/video-mute-unmute-with-jquery
+    
+    $("#waves").prop('muted', false);
+
+$("#mute-video").click( function (){
+    if( $("#waves").prop('muted') )
+    {
+        $("#waves").prop('muted', false);
+    }
+
+    else {
+    $("#waves").prop('muted', true);
+    }
+
+});
+ 
+          
+          
+          $('#smason').addClass('animated fadeInUp');
+          $('#gdesign').addClass('animated fadeInUp');
+          $('#hweaver').addClass('animated fadeInUp');
+            $('#logo2').css("display", "block");
+          $('#scroll1, #scrolltext').css("display", "none");
+         
+         
+           $('#background').fadeTo( "fast", 0.8 );
+             $('#headshot1, #tcraft').addClass('animated slideInLeft');
+          
+           $('#headshot3, #pcraft ').addClass('animated slideInRight');
+           $('#headshot2, #ecraft').addClass('animated slideInUp');
+          $('p102, p103, p104').addClass('animated fadeInDown');
+             $('#headshot1, #headshot2, #headshot3').fadeIn(200).removeClass("hidden");
+          
+     
+   $("#motiveicon2").mouseenter(function(){
+                           $("#motivepage2").fadeIn(200).removeClass('hidden');
+                  });
+                
+                $("#motiveicon2").mouseleave(function(){
+                       $("#motivepage2").fadeOut(200).addClass('hidden');
+                  });
+
+          $("#councilicon2").mouseenter(function(){
+                           $("#council2").fadeIn(200).removeClass('hidden');
+                  });
+                
+                $("#councilicon2").mouseleave(function(){
+                       $("#council2").fadeOut(200).addClass('hidden');
+                  });
+      
+        
+            
+          
+       
+          
+          
+          
+          
+      
+              
+              }
+            
+     
+          
+          
+      
+              
+              }
+            
+            ,
+              easingcss3: ' cubic-bezier(0.785, 0.135, 0.15, 0.86)' ,
+        
+ onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
+           
+           if(index == 1 && direction == "right"  ){
+               $('.fp-controlArrow.fp-prev ').fadeIn(50).removeClass('hidden'); 
+               $('.fp-controlArrow.fp-next').fadeOut(50).addClass('hidden'); 
+               
+               
+              
+            
+                
+        }
+     
+       if(index == 1 && direction == "left"  ){
+               $('.fp-controlArrow.fp-prev ').fadeOut(50).addClass('hidden'); 
+               $('.fp-controlArrow.fp-next').fadeIn(50).removeClass('hidden'); 
+               
+               
+              
+            
+                
+        }
+ },
+        
+        
+		css3:true
+	});
+	
+  
+    function detectmob() {
+   if(window.innerWidth <= 800 || window.innerHeight <= 600) {
+     return true;
+   } else {
+     return false;
+   }
+}
+
+if (detectmob()){
+top.location.href="handmade.html";
+}
+    
+	var audio = document.getElementById('background_audio');
+
+document.getElementById('').addEventListener('click', function (e)
+{
+    e = e || window.event;
+    audio.muted = !audio.muted;
+    e.preventDefault();
+}, false);
+    
+    
+    
+    
+   
+    
+    
+ 
+</script>
+  
+	
+
+
+</body>
+
+</html>
+  
+	
+    
